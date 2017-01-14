@@ -1,0 +1,8 @@
+language: none
+build:
+  pre_ci_boot:
+    image_name: therickys93/ubuntu14arduino
+    image_tag: latest
+    pull: true
+  ci:
+    - arduino-builder -verbose -build-options-file $ARDUINO_PATH/build.options.json src/arduinoserver/arduinoserver.ino
