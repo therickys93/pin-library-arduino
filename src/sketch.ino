@@ -6,7 +6,7 @@ void setup() {}
 
 void loop() {
 	redPin.on();
-	delay(1000);
+	delay(175);
 	redPin.off();
-	delay(1000);
+	delay(175);
 }
